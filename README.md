@@ -1,0 +1,1 @@
+This project retrieves weather data using open weather api. 
