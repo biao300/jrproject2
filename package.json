@@ -19,6 +19,6 @@
   "scripts": {
     "build": "webpack"
   },
-  "author": "thomas ren",
+  "author": "Thomas Ren",
   "license": "ISC"
 }

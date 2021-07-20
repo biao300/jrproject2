@@ -6,13 +6,15 @@ class Weekly extends React.Component {
     }
 
     render(){
+        const {date, weekday, weather, temprature} = this.props.data;
+
         return (
             <div className="weekly">
-                <p>{this.props.data.date}</p>
-                <p>{this.props.data.weekday}</p>
-                <p><img src={`images/${this.props.data.weather}.png`} className="weekly__image" /></p>
-                <p>{this.props.data.temprature}</p>
-                <p>{this.props.data.weather}</p>
+                <p>{date}</p>
+                <p>{weekday}</p>
+                <p><img src={`images/${weather.toLowerCase()}.png`} className="weekly__image" /></p>
+                <p>{temprature}</p>
+                <p>{weather}</p>
             </div>
         );
     }

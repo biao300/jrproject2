@@ -6,11 +6,13 @@ class Temprature extends React.Component {
     }
 
     render(){
+        const {temprature,weather} = this.props.data;
+
         return (
             <p className="temprature">
-                <span className="temprature__line1">{this.props.data.temprature}</span>
+                <span className="temprature__line1">{temprature}</span>
                 <br/>
-                <span className="temprature__line2">{this.props.data.weather}</span>
+                <span className="temprature__line2">{weather}</span>
             </p>
         );
     }

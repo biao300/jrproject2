@@ -5,12 +5,14 @@ class Detail extends React.Component {
         super(props);
     }
 
-    render(){
+    render() {
+        const {line1,line2} = this.props.data;
+        
         return (
             <p className="detail">
-                <span className="">{this.props.data.line1}</span>
+                <span className="">{line1}</span>
                 <br/>
-                <span className="">{this.props.data.line2}</span>
+                <span className="">{line2}</span>
             </p>
         );
     }
